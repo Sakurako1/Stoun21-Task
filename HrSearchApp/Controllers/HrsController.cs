@@ -34,6 +34,11 @@ namespace HrSearchApp.Controllers
                 return Unauthorized("Неверный логин или пароль.");
             }
 
+            if (user.Id <= 0)
+            {
+                return BadRequest("Некорректный идентификатор пользователя.");
+            }
+
             return Ok(new { message = "Успешный вход", userId = user.Id });
         }
     }
