@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HrSearchApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ac54cf82aaf45b999454cabec8a44589ebf7d088")]
 [assembly: System.Reflection.AssemblyProductAttribute("HrSearchApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HrSearchApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -7458,11 +7458,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Seraphus\\Desktop\\HrSearchApp\\HrSearchApp\\HrSearchApp\\HrSearchApp.csproj",
+      "projectUniqueName": "C:\\Users\\Seraphus\\Documents\\GitHub\\Stoun21-Task\\HrSearchApp\\HrSearchApp.csproj",
       "projectName": "HrSearchApp",
-      "projectPath": "C:\\Users\\Seraphus\\Desktop\\HrSearchApp\\HrSearchApp\\HrSearchApp\\HrSearchApp.csproj",
+      "projectPath": "C:\\Users\\Seraphus\\Documents\\GitHub\\Stoun21-Task\\HrSearchApp\\HrSearchApp.csproj",
       "packagesPath": "C:\\Users\\Seraphus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Seraphus\\Desktop\\HrSearchApp\\HrSearchApp\\HrSearchApp\\obj\\",
+      "outputPath": "C:\\Users\\Seraphus\\Documents\\GitHub\\Stoun21-Task\\HrSearchApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Seraphus\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,4 +1,5 @@
 ﻿using HrSearchApp.Interfaces;
+using HrSearchApp.Models;
 using HrSearchApp.Repository;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity.Data;
@@ -19,14 +20,14 @@ namespace HrSearchApp.Controllers
         }
 
         [HttpPost("login")]
-        public IActionResult Login([FromForm] string login, [FromForm] string password)
+        public IActionResult Login([FromBody] Hr hr)
         {
-            if (string.IsNullOrEmpty(login) || string.IsNullOrEmpty(password))
+            if (string.IsNullOrEmpty(hr.Login) || string.IsNullOrEmpty(hr.Password))
             {
                 return BadRequest("Логин и пароль не могут быть пустыми.");
             }
 
-            var user = _hrRepository.AuthenticateAsync(login, password);
+            var user = _hrRepository.AuthenticateAsync(hr.Login, hr.Password);
 
             if (user == null)
             {

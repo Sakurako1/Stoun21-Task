@@ -8,14 +8,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "login",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "password",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "hr",
+        "Type": "HrSearchApp.Models.Hr",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

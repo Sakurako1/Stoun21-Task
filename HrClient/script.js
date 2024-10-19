@@ -9,18 +9,20 @@ $(document).ready(function() {
     // Обработка отправки формы для логина
     $('#loginForm').on('submit', function(e) {
         e.preventDefault(); // Предотвращаем стандартное поведение формы
-        const username = $('#username').val();
+	const id = $('#userId').val();
+        const login = $('#username').val();
         const password = $('#password').val();
-        const data = {
-            username,
+        const dataLogin = {
+	    id,
+            login,
             password
         };
 
         $.ajax({
-            url: `http://localhost:5295/api/Hrs/Login`,
+            url: 'http://localhost:5295/api/Hrs/login',
             type: 'POST',
             contentType: 'application/json',
-            data: JSON.stringify(data),
+            data: JSON.stringify(dataLogin),
             success: function(response) {
                 console.log('Успех:', response);
                 alert('Успешный вход!');

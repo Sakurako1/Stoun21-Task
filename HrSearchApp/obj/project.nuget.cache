@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jWlZWaX8zeU=",
+  "dgSpecHash": "vMva3+XObZM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Seraphus\\Desktop\\HrSearchApp\\HrSearchApp\\HrSearchApp\\HrSearchApp.csproj",
+  "projectFilePath": "C:\\Users\\Seraphus\\Documents\\GitHub\\Stoun21-Task\\HrSearchApp\\HrSearchApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Seraphus\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Seraphus\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
