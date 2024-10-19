@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35219.272
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HrSearchApp", "HrSearchApp\HrSearchApp.csproj", "{DDBF3EF7-F0CE-4EDE-BCC3-E2FC9AE51971}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DDBF3EF7-F0CE-4EDE-BCC3-E2FC9AE51971}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDBF3EF7-F0CE-4EDE-BCC3-E2FC9AE51971}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDBF3EF7-F0CE-4EDE-BCC3-E2FC9AE51971}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDBF3EF7-F0CE-4EDE-BCC3-E2FC9AE51971}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A47723C9-6F54-4C70-8D98-898E47F0F576}
+	EndGlobalSection
+EndGlobal

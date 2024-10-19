@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Управление вакансиями</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script> <!-- Подключение нового файла JavaScript -->
+</head>
+<body>
+    <h1></h1>
+    <h2>Изменение состояния вакансии</h2>
+    <form id="addStudentForm">
+        <label for="applicant">Соискатель найден?:</label>
+        <select id="applicantId" name="applicant">
+            <option value="Yes">Да</option>
+            <option value="No">Нет</option>
+        </select>
+        <br>
+        <label for="uniqueNumber">Уникальный номер:</label>
+        <input type="text" id="id" name="id" placeholder="В формате UUID " required>
+        <br>
+        <button type="submit">Изменить</button>
+    </form>
+
+    <h2>Закрытие стажировки</h2>
+    <form id="closedInternshipsForm">
+        <label for="closedInternship">Уникальный номер вакансии:</label>
+        <input type="text" id="closedInternshipsId" name="ClosedInternships" required>
+        <select id="internshipId" name="internships">
+            <option value="Yes">Да</option>
+            <option value="No">Нет</option>
+        </select>
+        <br>
+        <button type="submit">Закрыть</button>
+    </form>
+
+    <h2>Закрытие вакансии</h2>
+    <form id="deleteVacancyForm">
+        <label for="deleteUniqueNumber">Уникальный номер:</label>
+        <input type="text" id="idDeleted" name="idDeleted" required>
+        <br>
+        <button type="submit">Закрыть</button>
+    </form>
+
+    <h2>Отправка задания</h2>
+    <form id="sendTaskForm">
+        <label for="sendUniqueNumber">Уникальный номер вакансии для отправки:</label>
+        <input type="text" id="sendUniqueNumber" name="sendUniqueNumber" required>
+        <br>
+        <button type="submit">Отправить</button>
+    </form>
+
+    <h2>Список Вакансий</h2>
+    <table id="studentList">
+        <thead>
+            <tr>
+                <th>Уникальный номер</th>
+                <th>Название</th>
+                <th>Описание</th>
+                <th>Состояние</th>
+                <th>Задача отправлена Да/Нет</th>
+		<th>Соискатель найден Да/Нет</th>
+                <th>Стажировка</th>
+                <th>Отдел</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <!-- Модальное окно для входа -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Вход в систему</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Закрыть">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label for="username">Логин</label>
+                            <input type="text" class="form-control" id="username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Пароль</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Войти</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
